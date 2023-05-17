@@ -5,7 +5,12 @@ header img {
 section img{
     width: 20%;
 }
+
 .img-product {
     width: 6%;
+}
+
+button {
+    cursor: pointer;
 }
 
