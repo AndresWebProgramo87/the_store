@@ -11,43 +11,51 @@
 <body>
     <main>
         <header>
-            <nav>
-                <div>
-                    <a href="index.html">
-                        <img src="images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">product</a>
-                        </li>
-                        <li>
-                            <a href="#">login</a>
-                        </li>
-                        <li>
-                            <a href="newProduct.html">New product</a>
-                        </li>
-                    </ul>
+            <nav class="container">
+                <div class="row menu">
+                    <div class="col-2">
+                        <a href="index.html" >
+                            <img src="images/chef.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <ul>
+                            <li>
+                                <a class="link_menu" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="link_menu" href="search.html">search<span></span></a>
+                            </li>
+                            <li>
+                                <a class="link_menu" href="#">login<span></span></a>
+                            </li>
+                            <li>
+                                <a class="link_menu" href="newProduct.html">New product<span></span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
-        <section>
-            <div>
-                <img class="img-product" src="images/logo.svg" alt="">
+        <section class="container section_producto">
+            <div class="row">
+                <div class="col-12 produc_form">
+                    <img class="img-product" src="images/chef.svg" alt="">
+                </div>
             </div>
-            <div>
+            <div class="form_content">
                 <form action="" method="post"> 
                     <label>Name:</label>
                     <input type="text"  placeholder="Name" required>
-                    <label>Price</label>
-                    <input type="number"  placeholder="Price" required>
-                    <label>Inventory</label>
-                    <input type="number"  placeholder="Inventory" required>
-                    <button type="submit">Create Product</button>
+                    <label>Description</label>
+                    <input type="text"  placeholder="description" required>
+                    <label>Address</label>
+                    <input type="text"  placeholder="address" required>
+                    <label>Image url</label>
+                    <input type="url"  placeholder="image" required>
+                    <div class="">
+                        <button type="button" class=" form_button btn btn-success">Save</button>
+                    </div>
                 </form>
             </div>
         </section>
